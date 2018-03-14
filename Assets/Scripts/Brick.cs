@@ -6,7 +6,7 @@ public class Brick : MonoBehaviour {
 
 	public Sprite[] HitSprites;
 	public AudioClip CrackSound;
-	public GameObject smoke;
+	public GameObject smokeParticleEffect;
 
 	private int TimesHit;
 	private LevelManager levelManager;
@@ -46,7 +46,8 @@ public class Brick : MonoBehaviour {
 		TimesHit++;
 		if (HitSprites.Length + 1 <= TimesHit) {
 			BricksLeft--;
-			GameObject SmokePuff = Instantiate (smoke, gameObject.transform.position, Quaternion.identity);
+			//Create smoke particle effect
+			GameObject SmokePuff = Instantiate (smokeParticleEffect, gameObject.transform.position, Quaternion.identity);
 			levelManager.BrickDestroyed ();
 			Destroy (gameObject);
 
@@ -55,6 +56,7 @@ public class Brick : MonoBehaviour {
 		}
 	}
 
+	//iF brick is hit we load the appropiate sprite   
 	void LoadSprites()
 	{
 		int spriteIndex = TimesHit - 1;

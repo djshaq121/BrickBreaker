@@ -82,7 +82,8 @@ MonoBehaviour:
   - {fileID: 21300006, guid: 4a00e13237182ce4b9b99868eec994e2, type: 3}
   - {fileID: 21300008, guid: 4a00e13237182ce4b9b99868eec994e2, type: 3}
   CrackSound: {fileID: 8300000, guid: ee20de7555130df4ebb0c44e172b14d8, type: 3}
-  smoke: {fileID: 1313416734520090, guid: c9e3654e8b0d8de4a9e9e0d009f4b78c, type: 2}
+  smokeParticleEffect: {fileID: 1313416734520090, guid: 9fd5be59d5be8a24d968c999f26929d5,
+    type: 2}
 --- !u!212 &212360352886455106
 SpriteRenderer:
   m_ObjectHideFlags: 1

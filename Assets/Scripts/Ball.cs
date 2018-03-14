@@ -5,6 +5,8 @@ using UnityEngine;
 public class Ball : MonoBehaviour {
 	private Paddle paddle;
 	private Vector3 PaddleToBallVector;
+	//We use physics 2d material to "bounce" off the colliders  
+
 	private bool bNotClicked = false;
 	// Use this for initialization
 	void Start () {

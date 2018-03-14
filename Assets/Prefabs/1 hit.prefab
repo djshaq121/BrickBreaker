@@ -80,7 +80,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HitSprites: []
   CrackSound: {fileID: 8300000, guid: ee20de7555130df4ebb0c44e172b14d8, type: 3}
-  smoke: {fileID: 1313416734520090, guid: c9e3654e8b0d8de4a9e9e0d009f4b78c, type: 2}
+  smokeParticleEffect: {fileID: 1313416734520090, guid: 007ec7ec59b6ee044aad7befcb48d2bc,
+    type: 2}
 --- !u!212 &212360352886455106
 SpriteRenderer:
   m_ObjectHideFlags: 1

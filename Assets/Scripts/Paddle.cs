@@ -20,6 +20,11 @@ public class Paddle : MonoBehaviour {
 			AutoPlay ();
 		}
 
+		if(Input.GetKeyDown(KeyCode.UpArrow))
+		{
+			Application.LoadLevel(Application.loadedLevel + 1);
+		}
+
 	}
 
 	void MoveWithMouse()
